@@ -16,28 +16,9 @@ public class SleepyHead {
 		// up here, lets assume its normally a weekday. so what value
 		// should isWeekend be here?
 		
-		
-		// Write code to ask the user what day it is.
-// use this as an example - change it to ask user the day
-	// good!	String nickels=JOptionPane.showInputDialog("how many nickels do you have?");
+
         String day=JOptionPane.showInputDialog("What day is it?");
-		// Set the boolean isWeekend based on the value they enter
-        // now write code to see if day is Saturday or Sunday try starting code and
-        // then I'll help with details...okay, does it go like this?
-        // is it the if statment?? yes.  and the word if is followed by 
-        // a test condition in parentheses  can you try putting that in?
-        // i forgot how it goes, if it is saturday or sunday? right, i'll do one of these days
-        // any question so far?nope  ok now Sunday ... I'm going to put in a symbol for the
-        // word "or" ...now you add code to test for Sunday...go ahead
-        // good. there are different ways to have this work.  i think i'll take out the "or"
-        // for now.  I'll explain later.
-        // now I want you to add code to set the boolean 'isWeekend' to true o ahead
-        //wait where do i put that code???  inside the if's curly braces  fix the spelling
-        // i fixed the spelling.  now give the variable the value 'true'
-        // no.  isWeekend is of type boolean, meaning it can only be given the value
-        // true or false, not Saturday.  good.  now where does the semicolon go? good!
-        // now do the same idea for Sunday on line 42 good.  now we need to deal
-        // with weekdays so ....
+		
         
         if ( day.equalsIgnoreCase("Saturday")) {
         	isWeekend=true;
@@ -46,15 +27,37 @@ public class SleepyHead {
 			isWeekend=true;
 		}
 		
+		// do you understand the code above?yes
+		
 		// let's see so far if this works.  wait!!!
 		// i'll add a line of code here
 		System.out.println(isWeekend);
 		
 		// If it is the weekend, tell the user they get to sleep in.
+		// use an 'if' here and test the boolean variable 'isWeekend'
+		// in the code above, you set 'isWeekend' to 'true' or 'false'
+		// depending on the day that was entered...
+		// so it woud be true  ... it depends on the day
+		// the code start off assuming that you'll enter a weekday, so
+		// then isWeekday = false
+		// but then if you enter Saturday or Sunday, it changes to
+		// isWeekend = true
+		
+		if (isWeekend == true) {
+			// tell the user they get to sleep in.  using a print statement
+			// need help?  you there Mariene?
+			System.out.println("It is the weekend - yay! - you can sleep in");
+		}
+		
+		// does this make sense?
+		// wait o do inhave to put the weekdays and say its false??
+		
+		// you already have that code here
 		
 		// If it is not the weekend, tell them to get out of bed and go to school!
 		
-		
+// have any questions?
+//		yea, how do i tell the user to sleep in??
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;

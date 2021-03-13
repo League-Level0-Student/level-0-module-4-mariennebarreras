@@ -1,3 +1,5 @@
+// yay! i'm going to check in on Miranda and come back in a bit
+
 package _02_boolean._1_sleepy_head;	
                                       
 import javax.swing.JOptionPane;
@@ -48,16 +50,23 @@ public class SleepyHead {
 			// need help?  you there Mariene?
 			System.out.println("It is the weekend - yay! - you can sleep in");
 		}
+		else {
+			// if we get here it means "isWeekend" is NOT true ... so it must be false
+			// make sense?yess  ok next time you can work on STAR STUDENT code below.
+			// lets save your work.  but first i'm checking in with miranda.  one moment okayy
+			// i'm back.  i'll help you save work
+			System.out.print("Its not the weekend-get out of bed!");
+		}
+		// good this works.  let me show you another version that works - using 'else' ...
 		
-		// does this make sense?
-		// wait o do inhave to put the weekdays and say its false??
-		
-		// you already have that code here
-		
-		// If it is not the weekend, tell them to get out of bed and go to school!
-		
+		if (isWeekend ==false ) {
+			System.out.print("Its not the weekend-get out of bed!");
+		}
 // have any questions?
-//		yea, how do i tell the user to sleep in??
+//		yea, how do i tell the user to sleep in??  look at lines 48 thru 52 for an example
+		
+		// hi mariene.  stuck?  are you stuck?  keep going - try some code and then we'll fix if needed
+		//my thing was glitching
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;

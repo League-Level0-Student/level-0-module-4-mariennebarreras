@@ -1,7 +1,7 @@
 package _01_double._2_test_scores;
 
 import javax.swing.JOptionPane;
-
+// was this finished?yea  do you want us to review it?  or go on to next program?just go on
 public class TestScores {
 
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class TestScores {
 		// how to ask user for something?yes  do you hear me when I talk?no my adio dosent work
 		// ooh ok.  so i suggest you copy a few lines of code from ChangeCalc and then
 		// modify the code
-		
+	// want to copy some code?yes go ahead	
 		// Ask the user hfor a test score ... go ahead and modify ...
 		String test=JOptionPane.showInputDialog("What is your test score?");
 		

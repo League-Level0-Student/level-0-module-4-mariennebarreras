@@ -1,5 +1,8 @@
 // yay! i'm going to check in on Miranda and come back in a bit
 
+// you started this, but need to finish.  ok.  look it over and
+// let me know if you have questions okay
+
 package _02_boolean._1_sleepy_head;	
                                       
 import javax.swing.JOptionPane;
@@ -18,7 +21,7 @@ public class SleepyHead {
 		// up here, lets assume its normally a weekday. so what value
 		// should isWeekend be here?
 		
-
+/*
         String day=JOptionPane.showInputDialog("What day is it?");
 		
         
@@ -67,11 +70,83 @@ public class SleepyHead {
 		
 		// hi mariene.  stuck?  are you stuck?  keep going - try some code and then we'll fix if needed
 		//my thing was glitching
+*/
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;
+		//what do i put for the code
+		// ok, first lets review some stuff.  do you understand
+		// the data type 'boolean'?no not really.  it can only
+		// have the value 'true' or 'false'
+		// and when you write code using 'if', it has a test condition
+		// that evaluates to 'true' or 'false'.  so let's say
+		// the user enters a score of 100, what value should your
+		// code give to the variable 'passedExam'?a percentage
+		// good guess, but no.  'passedExam' is of type 'boolean'
+		// so you can't give it a percentage value.so would it be either
+		//true or false yes.  so if the user got 100, what value
+		// should you give 'passedExam'? yes, so true.  yep!!
+		// what if the user got 65 on the exam?  no, false
+		// good.  so now let's work on the code below.  here is
+		// the set of steps:
+		// ask the user for their test score
+		// read it in
+		// if the score is >= 70, set passedExam to true, else set to false
+		// and system out print either congrats or better luck next time,
+		// as appropriate.
+		// questions so far? for the first step, do i ask the user
+		//like in JOptionpane....?yes, lets review how to do that.
+		// let's go back to TestScores.jave because you had to
+		// read in test scores...
+		
 		// Write code to ask the user what percentage they scored in their last exam
-
+		String test=JOptionPane.showInputDialog("What is your test score?");
+		int in=Integer.parseInt(test);
+		if (in>=70) {
+			System.out.print("Congrats");
+					// do a new line of code
+			//like the samething i did there?? no, i'll show you
+			passedExam = true;
+		}
+		else {	// this happens when the 'if' above it is false
+			System.out.print("better luck next time");
+			passedExam =false;
+		}
+		/*
+		if (in<70) {		// did you want to include 70 here??nope fix it
+			System.out.print("better luck next time");
+			passedExam =false;
+		}
+		*/
+		//so it like the same thing YES ohh okay i get it
+		// great!  lets save work for today
+		// it works!!  let me show you another way that works
+		
+		// good.  now i'm going to comment out some old code
+		// above so we can test just this section
+		// after we try it out, i'll help you save your work
+		
+		// now how do we handle things if the score is < 70?that wouldnt be true
+		// how do you write the code?i guess the same way?  ok try that
+		//were do i put it  where do you think?maybe line 110  ok try it
+		//do i put it the same way  i want you to try it and then i'll
+		// comment oh okay
+		
+		
+		// good.  just a little review.  do you understand the
+		// difference between the 2 numeric data types 'int' and 'double'?
+		//no  ok.  'int' is a whole number.  'double' has a decimal point
+		// example:  I can store 90 in an int, I can store 90.5 in a double
+		// questions?
+		//nope got t  you have a choice here.  do you want the user
+		// to enter only whole numbers for test score or do you want
+		// to allow numbers with decimal points?
+		//um, just whole numbers.  fine so lets change line 103.  i'll 
+		// show you
+		// good.  now i know this is confusing, but JOptionPane
+		// returns a 'String' and we have to turn that into a number
+		// want to go back to TestScores.java and find code that
+		// does this . then copy it?yea
 		
 		// If they scored more than 70, they passed the exam.
 		// Set the boolean passedExam based on their score.

@@ -5,6 +5,8 @@
 
 package _02_boolean._1_sleepy_head;	
                                       
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
@@ -12,6 +14,8 @@ public class SleepyHead {
 
 	public static void main(String[] args) {
 
+// can i help you?
+		
 		// boolean variables can only hold one of two values - true or false
 
 		/************************  SLEEPY HEAD  **************************/
@@ -30,7 +34,9 @@ public class SleepyHead {
         }
 		if(day.equalsIgnoreCase("Sunday")) {
 			isWeekend=true;
-		}
+		}  
+		
+		// questions?
 		
 		// do you understand the code above?yes
 		
@@ -173,12 +179,21 @@ public class SleepyHead {
 		
 */		
 		/***********************   RED SQUARE  ********************/
+// i think you didn't do this section yet.  it's a bit confusing!  First do you
+		// remember Robot code?  if not i'll help you with code inside method
+		// drawRedSquare below.  want help with that?yes please one moment 
 		
-		boolean isRed;
+		// ok now we will ask the user what color they want.  strangely we'll
+		// only draw if they pick red!!!
+		// miranda needs help saving her work okay
+		
+		String color = JOptionPane.showInputDialog("What color do you want?");
+// LET's FINISH THIS NEXT CLASS, OK?okay, can u help me save this
+		boolean isRed = true;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
 		
 		
-		boolean isSquare;		
+		boolean isSquare = true;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
 		
 		
@@ -187,12 +202,42 @@ public class SleepyHead {
 		// Use an if statement to ONLY draw a red square when it has been requested (use the method below)
 		// otherwise, tell the user you don't know how to draw that sh
 		// i fixed the
+		
+		// ok.  now we're learning here how to use boolean (true/false) variables.
+		// we should only draw the square if the user wants a square shape and a
+		// red color.  for now, i'l// questions?? nopel say yes to both.  meaning...ok?yes
+		
+		
+		// now we'll test that isRed and isSquare are both true
+		if (isRed == true && isSquare == true)	
+			drawRedSquare();   
 	}
 
 	// now try a weekday!  good it works so far!  questions? nope  ok lets save work
 	
 	static void drawRedSquare() {
 		Robot rob = new Robot();
-		// Complete the rest of this method
+		// Complete the rest of this method.  can you write code to make a square?
+		
+		// here is some sample code to help:
+		/*
+		rob.penDown();
+		rob.move(100);
+		rob.turn(90);
+		 * 
+		 */
+		rob.setPenColor(Color.RED);
+		rob.penDown();
+		 rob.move (200);
+		 rob.turn (90);
+		 rob.move (200);
+		 rob.turn (90);
+		rob.move (200);
+		 rob.turn (90);
+		rob.move (200);
+		
+		//would that make a square?? ok!  uncomment the code and add semicolons where needed
+		//like  that?  good.  let's just test this part for now by calling the
+		// method.  let me show you.
 	}	
 }

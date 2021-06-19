@@ -187,14 +187,45 @@ public class SleepyHead {
 		// only draw if they pick red!!!
 		// miranda needs help saving her work okay
 		
-		String color = JOptionPane.showInputDialog("What color do you want?");
+		String color = JOptionPane.showInputDialog("What color do u want??");
+		String shape = JOptionPane.showInputDialog("what shape do u want?");
 // LET's FINISH THIS NEXT CLASS, OK?okay, can u help me save this
+		// also ask user what shape they want.  we'll only draw if they say "square"!!
+		
+		// no its harder to test the user's 2 answers - color and shape - if they are
+		// stored in one string.  it's better to ask 2 separate questions.  okay so
+		//do i put another string?  yeah.  basically repeat line 190, but give the
+		// String a different name than "color", like call it "shape"
+		
+		// good.  now we will test the user's string answers.  I'll show you an
+		// example
+		
 		boolean isRed = true;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
+		if (color.equalsIgnoreCase("red")) {
+			isRed = true;
+		}
+		else {
+			isRed = false;
+		}
+		// does this make sense? yea  ok, I want you to do a similar thing for "isSquare"
+		// set to true if the user entered the word "square", otherwise set to false
 		
 		
-		boolean isSquare = true;		
+		boolean isSquare = true;
+		if (shape.equalsIgnoreCase("square")) {
+			isSquare = true;
+		}
+		else {
+			isSquare = false;  
+		}
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
+	//	I'm back!! sorry.  
+		//try out the program.  first answer "red" and "square".  soe that it draws
+		// thne try "red" and "circle" ... it should not draw. and so forth.
+		// good. what will happen if you enter "blue" and "square" do you think it will draw?
+		//no i dont think so  want to try?  thien lets save work and next class you can
+		// start on the next program okayy  good.  questions?nope i got it
 		
 		
 		// Now you MUST use the && operator to join the booleans for this code. 
@@ -206,7 +237,7 @@ public class SleepyHead {
 		// ok.  now we're learning here how to use boolean (true/false) variables.
 		// we should only draw the square if the user wants a square shape and a
 		// red color.  for now, i'l// questions?? nopel say yes to both.  meaning...ok?yes
-		
+		// one moment and i'll help you save work okay
 		
 		// now we'll test that isRed and isSquare are both true
 		if (isRed == true && isSquare == true)	

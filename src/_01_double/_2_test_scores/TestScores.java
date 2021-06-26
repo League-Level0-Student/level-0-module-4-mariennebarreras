@@ -86,6 +86,8 @@ public class TestScores {
 			// while you're doing that i'm going to help miranda a bit okay
 
 	}
+	// do you remember what you were working on?i think i finished this on right??
+	// ok lets see sleepyhead.  did you start or finish that/
  
           // hi marienne i'm back hey i just finshed the 70 score one  good
           // i see you tested it with the test score 70... lets see

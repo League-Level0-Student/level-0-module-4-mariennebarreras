@@ -1,3 +1,6 @@
+// lets try something else..processing assignments take a little longer to set up
+// and class is almost over.  i'll show you what to work on now
+
 // yay! i'm going to check in on Miranda and come back in a bit
 
 // you started this, but need to finish.  ok.  look it over and

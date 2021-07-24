@@ -50,12 +50,44 @@ public class StringMethods {
 		// another guess would be because of the word, word?  sorry i don't understand.
 		// but that's not it.  want me to explain?yes please spaces are included.
 		// how many spaces are there? 3 so 3+12 = 15 oh okay i understand now
-// LET'S SAVE WORK AND CONTINUE HERE NEXT TIME okay, 
+
+		// ok here is where you were working.  let me look at it to refresh my memory...ok
+		// so lets work on step 4.  it will print each character in "have a nice day" 
+		// separately.  do you remember how to write a for loop?
+		//does it start with for(int i =0; i<3; i++)  yes.  almost perfect!  let me
+		// explain.  i made one fix.  but lets talk about how many times this loop
+		// repeats.  if i starts at 0, counts up by 1 and keeps going while it is < 3,
+		// how many times will it repeat?will it repeat 3 times?  correct.
+		// now in this program we want it to repeat however many times there are
+		// characters in the variable 'word'.  you set the variable to "have a nice day".
+		// it turns out that word.length() will tell you how many characters are in there.
+		// so how could you use word.length() in the for loop? when i do this {
+		// would i put it in between those?
+		//}
+		// no.  it involves changing something in this part of the code:
+		// for(int i =0; i<word.length(); i++) woulf i put it here then  good guess but no  need help?yea
+		// so let's say word = "have a nice day", then when i = 0, we'll pull out the
+		// letter 'h'; when i is 1, the letter 'a'; when i is 2 ... wtter? 
+		// do you know?do u mean what letter is 3?so it would be v  yes! so now lets do
+		// the code for step 4 below
+	
 		
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
+		for(int i =0;i<word.length();i++) {
+			System.out.println(word.charAt(i));	// good start.  we need to fix 2 things
+						// first, a typo. let the computer help
+			// better.  now this will keep printing the letter at index 2..
+			// in "have a nice day", what letter is at index 2?would it be v  yep.
+			// try it out and see what it does!
+			// so how do we fix it so it prints out: h a v e  a n i c e d a y  you can try it
+			// hmm. not right.  any other ideas?um i ran out ahha  ok what about using i inside
+			// the charAt()/ohhh okay ill try that  it works!! do you understand?yes
+			// ok i wanat to help miranda and i want to help you save your work
+			// since class is almost over.
+		}
 
-		
+// LET'S SAVE WORK AND CONTINUE HERE NEXT TIME okay, 	
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
 		//    Print the char's position to the console.

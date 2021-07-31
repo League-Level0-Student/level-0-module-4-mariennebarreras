@@ -93,6 +93,57 @@ public class StringMethods {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
+		// can I suggest an outline (called 'pseudocode')?yes and also what is a char?
+		// 'char' is a data type that stores one character.  other data types are
+		// 'int', 'String', 'boolean'.  does that answer your question?yes, so int would be 
+		// considered a char?  'int' stores a whole number like 25 or -72, etc.  if
+		// you want to store a number with a decimal point, you use 'double' instead.
+		// 'double' can store a value like 4.75 , etc.  'char' can store the value of
+		// a key on the keyboard.  most of the keys are letters.  so usually 'char'
+		// stores a letter.
+		// ohhh okayy i get it now  good.  so here is the outline for step 5:
+		
+		// decide on a specific char you want to find in word.  make a variable
+		// of type 'char' and assign it a value of one of the letter in "have a nice day"
+		//but i dont know how to do the char string.  what letter do you want to look for?d
+		// ok so i'll make a variable of type char that has the value d
+		char myLetter = 'd';	// questions? nope  ok do you know what index letter 'd'
+		// is at in "have a nice day"?  remember 'h' is at index 0 d would be 9?  no you
+		// need to count the spaces too!so dwould be 12?  yes.  so if the code
+		// below works properly it will print 12.  get  um yes i think
+		
+		// wait so to type in a phrase i have to use JOptionpane? no. at the top of your
+		// program you already assigned it.
+//		String word = "have a nice day";
+		// you already did this at the start of this program.  you don't need to do it again.
+		//ohh okayy got it.  line 121 is 'pseudocode.  now try writing the actual code
+		// on the line below it I"M CHECKING ON MIRANDA FOR A BIT OK?okay
+		// hi again!  lets see what you have so far and then i'll help save your work
+// CONTINUE HERE NEXT CLASS		
+		 for (int i=0; i<= word.length()-1; i = i+1) { // your word stored "have a nice day"
+			 // good start.  2 fixes:
+			 // 1) we want to look at each letter in "have a nice day" so 'i' show
+			 // increment by 1 each time otherwise your code would skip everey other letter
+			 // by the way i++ is the same as i = i+1.
+			 // 2) we should look at every letter in "have a nice day", so
+			 // there's a method that figures out how many characters are in there
+			 // it's word.length() ... it's better to use it.
+			 // since i starts at zero it ends at word.length() - 1
+			 // questions?no not really  ok lets save work one moment
+		     System.out.print(i);
+		// {
+		//		if (the current char is the one you're looking for)
+		//      {
+		//            print the position
+		//  	}
+		//	}
+		 }
+		 
+		// so this outline is called 'pseudocode' because it's kinda code like but
+		// it wouldn't compile  see the red x?/ yes
+		
+		// ok now you can fill in the real code line by line.
+		
 		
 	}
 }
